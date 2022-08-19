@@ -1,5 +1,5 @@
-from shop import data_generator
-from shop.order import Order
+from mod_06.lesson_1.homework_1.shop import data_generator
+from mod_06.lesson_1.homework_1.shop.order import Order
 
 
 def run_homework():
