@@ -35,16 +35,16 @@ def walk_time(src, dst) -> int:
 
 def run_example():
     src_address = "Mierzyn 1, 97-340 Rozprza"
-    dst_address = "Mierzyn 6, 97-340 Rozprza"
+    dst_address = "Sienkiewicza 21 Piotrków Trybunalski, 97-300 Piotrków Trybunalski"
     geo_locator = GeoLocator()
     src_location = geo_locator.street_location_from_address(src_address)
     dst_location = geo_locator.street_location_from_address(dst_address)
     src_dst_distance = meter_distance(src_location, dst_location)
     src_dst_walk_time = walk_time(src_location, dst_location)
 
-    print(f"Dystans z {src_address} do {dst_address} to {src_dst_distance} metrów.")
+    print(f"Dystans z {src_address} do {dst_address} to {round(src_dst_distance/1000, 2)} km.")
     print(f"Czas potrzebny na przejście to ok. {src_dst_walk_time} mnut.")
-    print(src_location)
+    #print(src_location)
 
 
 if __name__ == "__main__":

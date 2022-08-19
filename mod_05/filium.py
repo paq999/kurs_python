@@ -14,22 +14,22 @@ def random_point():
 def generate_example_map():
     generated_map = folium.Map(location=MIERZYN_CENTER_POSITION, zoom_start=13)
 
-    # for number in range(20):
-    #     generated_map.add_child(
-    #         folium.CircleMarker(
-    #             location=random_point(),
-    #             fill="true",
-    #             radius=8,
-    #             popup=str(number),
-    #             fill_color="blue",
-    #             fill_opacity=1
-    #         )
-    #     )
-    points = [random_point() for _ in range(5)]
+    for number in range(20):
+        generated_map.add_child(
+            folium.CircleMarker(
+                location=random_point(),
+                fill="true",
+                radius=8,
+                popup=str(number),
+                fill_color="blue",
+                fill_opacity=1
+            )
+        )
+    # points = [random_point() for _ in range(10)]
+    #
+    # folium.PolyLine(points, color="red", weight=3.5, opacity=1).add_to(
+    #     generated_map
 
-    folium.PolyLine(points, color="red", weight=3.5, opacity=1).add_to(
-        generated_map
-    )
 
     generated_map.save(MAP_FILE_LOCATION)
 
