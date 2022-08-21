@@ -27,13 +27,14 @@ def generate_example_map():
                 <p><b>Poziom baterii:</b> {row[6]}%</p>
                 <a href={row[7][12:-2]} target="_blank">Zobacz w google maps</a>
             """
+            icon = folium.Icon(icon="envelope", color="green")
             iframe = folium.IFrame(html=html, width=300, height=280)
             popup = folium.Popup(iframe)
             generated_map.add_child(
                 folium.Marker(
                     location=coord,
                     popup=popup,
-                    icon=folium.Icon(color="green")
+                    icon=icon
                 )
             )
             points.append(coord)
