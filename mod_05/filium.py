@@ -10,9 +10,9 @@ MAP_FILE_LOCATION = "map.html"
 def generate_example_map():
     generated_map = folium.Map(location=CENTER_POSITION, zoom_start=17)
 
-    with open("export.csv", newline="", encoding="UTF-8") as coordinate:
+    with open("export.csv", newline="", encoding="UTF-8") as csv_file:
         points = []
-        csv_reader = csv.reader(coordinate)
+        csv_reader = csv.reader(csv_file)
         header = next(csv_reader)
         for row in csv_reader:
             coord = float(row[2]), float(row[3])
