@@ -38,7 +38,7 @@ def generate_example_map():
             )
             points.append(coord)
 
-    folium.PolyLine(points, color="red", weight=3.5, opacity=1).add_to(generated_map)
+    folium.PolyLine(points, color="red", weight=3, opacity=1).add_to(generated_map)
     generated_map.save(MAP_FILE_LOCATION)
 
 
