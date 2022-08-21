@@ -13,16 +13,15 @@ def generate_example_map():
     with open("export.csv", newline="", encoding="UTF-8") as coordinate:
         points = []
         csv_reader = csv.reader(coordinate)
-        for index, row in enumerate(csv_reader):
-            if index == 0:
-                continue
+        header = next(csv_reader)
+        for row in csv_reader:
             coord = float(row[2]), float(row[3])
             html = f"""
-                <p><b>Data:</b> {row[0]}</p>
-                <p><b>Czas:</b> {row[1]}</p>
-                <p><b>Szerokość geograficzna:</b> {row[2]}</p>
-                <p><b>Długość geograficzna:</b> {row[3]}</p>
-                <p><b>Typ lokalizacji:</b> {row[4]}</p>
+                <p><b>{header[0]}:</b> {row[0]}</p>
+                <p><b>{header[1]}:</b> {row[1]}</p>
+                <p><b>{header[2]} geograficzna:</b> {row[2]}</p>
+                <p><b>{header[3]}:</b> {row[3]}</p>
+                <p><b>{header[4]}:</b> {row[4]}</p>
                 <p><b>Prędkość:</b> {row[5]} km/h</p>
                 <p><b>Poziom baterii:</b> {row[6]}%</p>
                 <a href={row[7][12:-2]} target="_blank">Zobacz w google maps</a>
