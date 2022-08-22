@@ -28,7 +28,7 @@ def show_history():
     orders = load_orders(first_name, last_name)
     print("Twoje zamówiena to:")
     for order in orders:
-        print(orders)
+        print(order)
 
 
 def handle_customer():

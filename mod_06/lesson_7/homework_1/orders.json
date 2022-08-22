@@ -31,6 +31,38 @@
                     }
                 ]
             }
+        ],
+        "Rafa\u0142-Paj\u0105k": [
+            {
+                "client_first_name": "Rafa\u0142",
+                "client_last_name": "Paj\u0105k",
+                "order_elements": [
+                    {
+                        "product": {
+                            "name": "M\u0142otek",
+                            "category": "TOOLS",
+                            "unit_price": 35.0,
+                            "identifier": 6
+                        },
+                        "quantity": 1
+                    }
+                ]
+            },
+            {
+                "client_first_name": "Rafa\u0142",
+                "client_last_name": "Paj\u0105k",
+                "order_elements": [
+                    {
+                        "product": {
+                            "name": "Chleb",
+                            "category": "FOOD",
+                            "unit_price": 3.5,
+                            "identifier": 96
+                        },
+                        "quantity": 1
+                    }
+                ]
+            }
         ]
     }
 }

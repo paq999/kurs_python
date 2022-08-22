@@ -25,7 +25,8 @@ def select_action():
 def show_history():
     orders = load_orders()
     print("Lista zamówień:")
-    print(orders)
+    for order in orders:
+        print(order)
 
 
 def handle_customer():
