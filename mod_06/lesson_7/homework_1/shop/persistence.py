@@ -147,7 +147,7 @@ def load_orders(client_first_name, client_last_name, file_name="orders.json"):
         Order(
             client_first_name=order["client_first_name"],
             client_last_name=order["client_last_name"],
-            orders_elements=[
+            order_elements=[
                 OrderElement(
                     quantity=order_element["quantity"],
                     product=Product(
