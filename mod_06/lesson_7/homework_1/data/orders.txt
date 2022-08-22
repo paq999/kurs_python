@@ -1,0 +1,56 @@
+--------------------
+Zamówienie złożone przez: Rafał  Pająk
+O łącznej wartości: 140 PLN
+Zamówione produkty:
+	Nazwa: Rower | Kategoria: Inne | Cena: 84 PLN/szt x 1
+	Nazwa: Chleb | Kategoria: Jedzonko | Cena: 14 PLN/szt x 4
+
+--------------------
+--------------------
+Zamówienie złożone przez: Rafał Pająk
+O łącznej wartości: 70.0 PLN
+Zamówione produkty:
+	Nazwa: MĹ‚otek | Kategoria: Narzędzia | Cena: 35.0 PLN/szt x 2
+
+--------------------
+--------------------
+Zamówienie złożone przez: Rafał Pająk
+O łącznej wartości: 35.0 PLN
+Zamówione produkty:
+	Nazwa: Młotek | Kategoria: Narzędzia | Cena: 35.0 PLN/szt x 1
+
+--------------------
+--------------------
+Zamówienie złożone przez: Rafał Pająk
+O łącznej wartości: 175.0 PLN
+Zamówione produkty:
+	Nazwa: Młotek | Kategoria: Narzędzia | Cena: 35.0 PLN/szt x 5
+
+--------------------
+--------------------
+Zamówienie złożone przez: Rafał Pająk p
+O łącznej wartości: 0 PLN
+Zamówione produkty:
+
+--------------------
+--------------------
+Zamówienie złożone przez: Rafał Pająk
+O łącznej wartości: 10.5 PLN
+Zamówione produkty:
+	Nazwa: Chleb | Kategoria: Jedzonko | Cena: 3.5 PLN/szt x 3
+
+--------------------
+--------------------
+Zamówienie złożone przez: Rafał Pająk
+O łącznej wartości: 175.0 PLN
+Zamówione produkty:
+	Nazwa: Młotek | Kategoria: Narzędzia | Cena: 35.0 PLN/szt x 5
+
+--------------------
+--------------------
+Zamówienie złożone przez: Rafał Pająk
+O łącznej wartości: 105.0 PLN
+Zamówione produkty:
+	Nazwa: Młotek | Kategoria: Narzędzia | Cena: 35.0 PLN/szt x 3
+
+--------------------
