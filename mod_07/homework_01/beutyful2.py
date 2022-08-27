@@ -11,22 +11,9 @@ class PostPreview:
     price: float
 
 
-def curse_name_div(tag):
+def curse_a(tag):
     return (
-        tag.name == "h2"
-        and tag.has_attr("class")
-        and "woocommerce-loop-product__title" in tag["class"]
-    )
-
-
-def curse_price_div(tag):
-
-    return (
-        tag.name == "ins"
-        and tag.bdi
-        # and not tag.has_attr("aria-hidden")
-        # and tag.has_attr("class")
-        # and "price" in tag["class"]
+        tag.name == "a" and tag.has_attr("class") and "woocommerce-LoopProduct-link" in tag["class"]
     )
 
 
@@ -44,15 +31,15 @@ class InfoShareAcademyParser:
         self.parsed_page = BeautifulSoup(response.text, features="html.parser")
 
     def parser_all_curses(self):
-        curses_name = self.parsed_page.find_all(curse_name_div)
-        curses_price = self.parsed_page.find_all(curse_price_div)
-
-        for curse_name, curse_price in zip(curses_name, curses_price):
-            self.found_curses.append(
-                PostPreview(
-                    curse_name.string, float(curse_price.get_text(strip=" ").replace(",", ".")[:-2])
-                )
-            )
+        all_curse = self.parsed_page.find_all(curse_a)
+        for curs in all_curse:
+            curs_name = curs.h2.string
+            curs_span_tags = curs.find_all("bdi")
+            try:
+                curs_price = float(curs_span_tags[1].get_text(strip=" ").replace(",", ".")[:-2])
+            except IndexError:
+                curs_price = float(curs_span_tags[0].get_text(strip=" ").replace(",", ".")[:-2])
+            self.found_curses.append(PostPreview(curse_name=curs_name, price=curs_price))
 
 
 def run_example():
